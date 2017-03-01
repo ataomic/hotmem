@@ -1,7 +1,9 @@
 #ifndef HM_TYPES_H
 #define HM_TYPES_H
 
-typedef char s8;
+#include "hm_def.h"
+
+typedef signed char s8;
 typedef short s16;
 typedef int s32;
 

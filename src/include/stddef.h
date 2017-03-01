@@ -1,5 +1,5 @@
-#ifndef STDDEF_H_INCLUDED_
-#define STDDEF_H_INCLUDED_
+#ifndef HM_STDDEF_H
+#define HM_STDDEF_H
 
 #ifndef offsetof
 #define offsetof(TYPE, MEMBER) ((size_t) &((TYPE *)0)->MEMBER)
@@ -36,6 +36,19 @@ typedef enum {
 #define flag_test(o, f) ((o)->flags & (f))
 
 #define array_size(array) (sizeof(array)/sizeof((array)[0]))
+
+typedef char s8;
+typedef short s16;
+typedef int s32;
+
+typedef unsigned char u8;
+typedef unsigned short u16;
+typedef unsigned int u32;
+
+typedef unsigned char uchar;
+typedef unsigned short ushort;
+typedef unsigned int uint;
+typedef unsigned long ulong;
 
 #endif
 
